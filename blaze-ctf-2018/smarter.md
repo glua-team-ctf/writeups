@@ -200,3 +200,5 @@ We can recover more of the flag with simple arithmetic:
 We now have `flag{mayb3_w3_????_b3tter_t00ls}`.
 
 Some guesswork gives us the final flag: `flag{mayb3_w3_n33d_b3tter_t00ls}`.
+
+You can view the decompiler output here: https://ethervm.io/decompile?address=0x8baae1b64dccfee7b88244b41b9c0c4f587e7345&network=ropsten
