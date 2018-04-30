@@ -136,6 +136,7 @@ The pattern of asserts in `checkFlag(bytes)` tells us that the flag is 32 bytes 
 A quick look at the decompiled dispatch table shows that `0xf605fa57(bytes)` is implemented in `func_1869`.
 `func_1869` takes the bytes at `0x1a`, `0x1b`, `0x1c` and `0x1d` and `keccak256`s them. 
 This is later compared against something like `keccak256(address(msg.sender).code[0x59:0x5d])`. `msg.sender` is the contract itself at this point and bytes `0x59` to `0x5d` of the bytecode are `74 30 30 6c` or `t00l`.
+
 We now have `flag{?????????????????????t00ls}` for the flag.
 
 `func_1869` also calls `0xd6385778` with the flag after xoring each byte with `msg.value`. `msg.value` can be inferred to be `0x2a` from the start of `func_1869`:
@@ -149,6 +150,7 @@ We now have `flag{?????????????????????t00ls}` for the flag.
 [Decompilation](https://ethervm.io/decompile?address=0x8baae1b64dccfee7b88244b41b9c0c4f587e7345&network=ropsten#func_1195)
 
 `0xd6385778(bytes)` is implemented in `func_1195(bytes)`.
+
 `func_1195` takes the bytes from `0x05` to `0x0c` and `keccak256`s them. The result is compared against something like `keccak256(0x74f794a249c48cbd04/block.number)`. `block.number` is `0x01a4`:
 ```js
         if (block.number != 0x01a4) { goto label_0038; }
@@ -166,7 +168,9 @@ We now have `flag{mayb3_w3?????????????t00ls}`.
 [Decompilation](https://ethervm.io/decompile?address=0x8baae1b64dccfee7b88244b41b9c0c4f587e7345&network=ropsten#func_073D)
 
 `0xb220f73c(bytes)` is implemented in `func_073D(bytes)`.
-At the top of this function is an assert that tells us that byte `0x0d` of the flag is `0x75 ^ 0x2a` or `_`
+
+At the top of this function is an assert that tells us that byte `0x0d` of the flag is `0x75 ^ 0x2a` or `_`.
+
 We now have `flag{mayb3_w3_????????????t00ls}`.
 
 Bytes `0x0e`, `0x0f`, `0x10` and `0x11` of the xored flag are loaded into memory and passed to a call to `address(0x02)`. This is a special address that performs SHA-256 hashes. The resulting hash + 1 is supposed to be equal to `0xa8c8af687609bf404c202ac1378e10cd19421e72c0a161edc56b53752326592b`.
@@ -179,6 +183,7 @@ A call is made to `0x6c54fcef` with the xored flag.
 [Decompilation](https://ethervm.io/decompile?address=0x8baae1b64dccfee7b88244b41b9c0c4f587e7345&network=ropsten#func_02B5)
 
 `0x6c54fcef(bytes)` is implemented in `func_02B5(bytes)`.
+
 `func_02B5` builds a value from bytes `0x12` to `0x19` of the flag (`temp0` here), does some math and asserts that the result is `0x02f0c798885c9f2975b114`.
 ```js
         var0 = (temp0 + temp0 * msg.gas * msg.value) * tx.gasprice;
