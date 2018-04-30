@@ -13,9 +13,9 @@ abi = [
 ]
 
 Author : itsZN
-
-Files: smarter.bin
 ```
+
+**Files:** [smarter.bin](./smarter.bin)
 
 Various tools for analyzing unknown smart contracts already exist, such as:
 * Porosity, a decompiler (https://github.com/comaeio/porosity)
