@@ -1,0 +1,120 @@
+Porosity v0.1 (https://www.comae.io)
+Matt Suiche, Comae Technologies <support@comae.io>
+The Ethereum bytecode commandline decompiler.
+Decompiles the given Ethereum input bytecode and outputs the Solidity code.
+
+Hash: 0x5B61291C
+executeInstruction: NOT_IMPLEMENTED: REVERT
+executeInstruction: NOT_IMPLEMENTED: CALLDATASIZE
+executeInstruction: NOT_IMPLEMENTED: REVERT
+executeInstruction: NOT_IMPLEMENTED: REVERT
+executeInstruction: NOT_IMPLEMENTED: CALLDATACOPY
+executeInstruction: NOT_IMPLEMENTED: TIMESTAMP
+executeInstruction: NOT_IMPLEMENTED: REVERT
+executeInstruction: NOT_IMPLEMENTED: CALLDATACOPY
+executeInstruction: NOT_IMPLEMENTED: TIMESTAMP
+executeInstruction: NOT_IMPLEMENTED: REVERT
+executeInstruction: NOT_IMPLEMENTED: CALLDATACOPY
+executeInstruction: NOT_IMPLEMENTED: REVERT
+executeInstruction: NOT_IMPLEMENTED: CALLDATACOPY
+executeInstruction: NOT_IMPLEMENTED: CALLDATACOPY
+executeInstruction: NOT_IMPLEMENTED: CALLDATACOPY
+executeInstruction: NOT_IMPLEMENTED: NUMBER
+executeInstruction: NOT_IMPLEMENTED: NUMBER
+executeInstruction: NOT_IMPLEMENTED: REVERT
+executeInstruction: NOT_IMPLEMENTED: CALLDATACOPY
+executeInstruction: NOT_IMPLEMENTED: NUMBER
+executeInstruction: NOT_IMPLEMENTED: NUMBER
+executeInstruction: NOT_IMPLEMENTED: CALLDATACOPY
+function func_5b61291c {
+}
+
+
+LOC: 2
+Hash: 0x64D98F6E
+executeInstruction: NOT_IMPLEMENTED: REVERT
+function func_64d98f6e {
+      if (!msg.value) {
+      }
+}
+
+
+LOC: 4
+Hash: 0x6C54FCEF
+executeInstruction: NOT_IMPLEMENTED: CALLDATACOPY
+executeInstruction: NOT_IMPLEMENTED: TIMESTAMP
+executeInstruction: NOT_IMPLEMENTED: REVERT
+executeInstruction: NOT_IMPLEMENTED: CALLDATACOPY
+executeInstruction: NOT_IMPLEMENTED: TIMESTAMP
+function func_6c54fcef {
+      if (!msg.value) {
+         memory[0x40] = 0x40 + 0x20;
+      }
+      memory[0x40] = 0x40 + 0x20;
+      if (0x5AD92D80 == 0x0) {
+      }
+}
+
+
+LOC: 8
+Hash: 0x7430306C
+executeInstruction: NOT_IMPLEMENTED: REVERT
+function func_7430306c {
+      if (!msg.value) {
+      }
+}
+
+
+LOC: 4
+Hash: 0xB220F73C
+executeInstruction: NOT_IMPLEMENTED: CALLDATACOPY
+executeInstruction: NOT_IMPLEMENTED: REVERT
+executeInstruction: NOT_IMPLEMENTED: CALLDATACOPY
+function func_b220f73c {
+      if (!msg.value) {
+         memory[0x40] = 0x40 + 0x20;
+      }
+      memory[0x40] = 0x40 + 0x20;
+      if (0x0 == 0x7500000000000000000000000000000000000000000000000000000000000000) {
+      }
+}
+
+
+LOC: 8
+Hash: 0xB4EFF690
+executeInstruction: NOT_IMPLEMENTED: CALLDATACOPY
+function func_b4eff690 {
+      memory[0x40] = 0x40 + 0x20;
+      if (0x0 == 0x6600000000000000000000000000000000000000000000000000000000000000) {
+      }
+}
+
+
+LOC: 5
+Hash: 0xD6385778
+executeInstruction: NOT_IMPLEMENTED: CALLDATACOPY
+executeInstruction: NOT_IMPLEMENTED: NUMBER
+executeInstruction: NOT_IMPLEMENTED: NUMBER
+executeInstruction: NOT_IMPLEMENTED: REVERT
+executeInstruction: NOT_IMPLEMENTED: CALLDATACOPY
+executeInstruction: NOT_IMPLEMENTED: NUMBER
+executeInstruction: NOT_IMPLEMENTED: NUMBER
+function func_d6385778 {
+      if (!msg.value) {
+         memory[0x40] = 0x40 + 0x20;
+      }
+      memory[0x40] = 0x40 + 0x20;
+      if (0x1A4 == 0x0) {
+      }
+}
+
+
+LOC: 8
+Hash: 0xF605FA57
+executeInstruction: NOT_IMPLEMENTED: CALLDATACOPY
+function func_f605fa57 {
+      memory[0x40] = 0x40 + 0x20;
+}
+
+
+LOC: 3

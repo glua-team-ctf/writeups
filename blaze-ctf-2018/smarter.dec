@@ -1,0 +1,1195 @@
+contract Contract {
+    function main() {
+        memory[0x40:0x60] = 0x60;
+    
+        if (msg.data.length < 0x04) { revert(memory[0x00:0x00]); }
+        else {
+            var var0 = 0xffffffff & msg.data[0x00:0x20] / 0x0100000000000000000000000000000000000000000000000000000000;
+        
+            if (0x5b61291c == var0) {
+                var var1 = 0x009b;
+                revert(memory[0x00:0x00]);
+            } else if (0x64d98f6e == var0) {
+                if (msg.value) { revert(memory[0x00:0x00]); }
+            
+                var1 = 0x00b0;
+                // Method call to func_029F
+                var temp0 = memory[0x40:0x60];
+                memory[temp0:temp0 + 0x20] = !!!!var1;
+                var temp1 = memory[0x40:0x60];
+                return memory[temp1:temp1 + (0x20 + temp0) - temp1];
+            } else if (0x6c54fcef == var0) {
+                if (msg.value) { revert(memory[0x00:0x00]); }
+            
+                var1 = 0x0125;
+                var temp2 = 0x04 + msg.data[0x04:0x24];
+                var temp3 = msg.data[temp2:temp2 + 0x20];
+                var temp4 = memory[0x40:0x60];
+                memory[0x40:0x60] = temp4 + 0x20 + (0x1f + temp3) / 0x20 * 0x20;
+                memory[temp4:temp4 + 0x20] = temp3;
+                memory[0x20 + temp4:0x20 + temp4 + temp3] = msg.data[0x20 + temp2:0x20 + temp2 + temp3];
+                var var2 = temp4;
+                // Method call to func_02B5
+                stop();
+            } else if (0x7430306c == var0) {
+                if (msg.value) { revert(memory[0x00:0x00]); }
+            
+                var1 = 0x013a;
+                selfdestruct(0x00);
+            } else if (0xb220f73c == var0) {
+                if (msg.value) { revert(memory[0x00:0x00]); }
+            
+                var1 = 0x0197;
+                var temp5 = 0x04 + msg.data[0x04:0x24];
+                var temp6 = msg.data[temp5:temp5 + 0x20];
+                var temp7 = memory[0x40:0x60];
+                memory[0x40:0x60] = temp7 + 0x20 + (0x1f + temp6) / 0x20 * 0x20;
+                memory[temp7:temp7 + 0x20] = temp6;
+                memory[0x20 + temp7:0x20 + temp7 + temp6] = msg.data[0x20 + temp5:0x20 + temp5 + temp6];
+                var2 = temp7;
+                // Method call to func_073D
+                stop();
+            } else if (0xb4eff690 == var0) {
+                var1 = 0x01e9;
+                var temp8 = 0x04 + msg.data[0x04:0x24];
+                var temp9 = msg.data[temp8:temp8 + 0x20];
+                var temp10 = memory[0x40:0x60];
+                memory[0x40:0x60] = temp10 + 0x20 + (0x1f + temp9) / 0x20 * 0x20;
+                memory[temp10:temp10 + 0x20] = temp9;
+                memory[0x20 + temp10:0x20 + temp10 + temp9] = msg.data[0x20 + temp8:0x20 + temp8 + temp9];
+                var2 = temp10;
+                // Method call to func_0BCC
+                stop();
+            } else if (0xd6385778 == var0) {
+                if (msg.value) { revert(memory[0x00:0x00]); }
+            
+                var1 = 0x0246;
+                var temp11 = 0x04 + msg.data[0x04:0x24];
+                var temp12 = msg.data[temp11:temp11 + 0x20];
+                var temp13 = memory[0x40:0x60];
+                memory[0x40:0x60] = temp13 + 0x20 + (0x1f + temp12) / 0x20 * 0x20;
+                memory[temp13:temp13 + 0x20] = temp12;
+                memory[0x20 + temp13:0x20 + temp13 + temp12] = msg.data[0x20 + temp11:0x20 + temp11 + temp12];
+                var2 = temp13;
+                // Method call to func_1195
+                stop();
+            } else {
+                if (0xf605fa57 != var0) { revert(memory[0x00:0x00]); }
+            
+                var1 = 0x0298;
+                var temp14 = 0x04 + msg.data[0x04:0x24];
+                var temp15 = msg.data[temp14:temp14 + 0x20];
+                var temp16 = memory[0x40:0x60];
+                memory[0x40:0x60] = temp16 + 0x20 + (0x1f + temp15) / 0x20 * 0x20;
+                memory[temp16:temp16 + 0x20] = temp15;
+                memory[0x20 + temp16:0x20 + temp16 + temp15] = msg.data[0x20 + temp14:0x20 + temp14 + temp15];
+                var2 = temp16;
+                // Method call to func_1869
+                stop();
+            }
+        }
+    }
+    
+    function func_029F() {
+        arg0 = 0xff & storage[0x00] / 0x0100 ** 0x00;
+        // Could not resolve jump destination (is this a return?)
+    }
+    
+    function func_02B5() {
+        var var0 = 0x00;
+    
+        if (block.timestamp != 0x5ad92d80) { goto label_0038; }
+    
+        var var1 = 0x02d0;
+        // Method call to func_1DBD
+        var1 = arg0;
+        var var2 = 0x12;
+    
+        if (var2 >= memory[var1:var1 + 0x20]) { assert(); }
+    
+        var0 = (0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var1 + var2:0x20 + var1 + var2 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000)) / 0x0100000000000000000000000000000000000000000000000000000000000000;
+        var1 = 0x08;
+        var2 = arg0;
+        var var3 = 0x13;
+    
+        if (var3 >= memory[var2:var2 + 0x20]) { assert(); }
+    
+        var0 = var0 + 0x02 ** var1 * ((0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var2 + var3:0x20 + var2 + var3 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000)) / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var1 = 0x10;
+        var2 = arg0;
+        var3 = 0x14;
+    
+        if (var3 >= memory[var2:var2 + 0x20]) { assert(); }
+    
+        var0 = var0 + 0x02 ** var1 * ((0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var2 + var3:0x20 + var2 + var3 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000)) / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var1 = 0x18;
+        var2 = arg0;
+        var3 = 0x15;
+    
+        if (var3 >= memory[var2:var2 + 0x20]) { assert(); }
+    
+        var0 = var0 + 0x02 ** var1 * ((0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var2 + var3:0x20 + var2 + var3 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000)) / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var1 = 0x20;
+        var2 = arg0;
+        var3 = 0x16;
+    
+        if (var3 >= memory[var2:var2 + 0x20]) { assert(); }
+    
+        var0 = var0 + 0x02 ** var1 * ((0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var2 + var3:0x20 + var2 + var3 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000)) / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var1 = 0x28;
+        var2 = arg0;
+        var3 = 0x17;
+    
+        if (var3 >= memory[var2:var2 + 0x20]) { assert(); }
+    
+        var0 = var0 + 0x02 ** var1 * ((0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var2 + var3:0x20 + var2 + var3 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000)) / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var1 = 0x30;
+        var2 = arg0;
+        var3 = 0x18;
+    
+        if (var3 >= memory[var2:var2 + 0x20]) { assert(); }
+    
+        var0 = var0 + 0x02 ** var1 * ((0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var2 + var3:0x20 + var2 + var3 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000)) / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var1 = 0x38;
+        var2 = arg0;
+        var3 = 0x19;
+    
+        if (var3 >= memory[var2:var2 + 0x20]) { assert(); }
+    
+        var temp0 = var0 + 0x02 ** var1 * ((0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var2 + var3:0x20 + var2 + var3 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000)) / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var0 = (temp0 + temp0 * msg.gas * msg.value) * tx.gasprice;
+        var1 = 0x071d;
+        // Method call to func_1DBD
+    
+        if (0x02f0c798885c9f2975b114 == var0) {
+            // Could not resolve jump destination (is this a return?)
+        } else {
+        label_0038:
+        
+            if (0x291c == var0) {
+                var0 = 0x009b;
+                revert(memory[0x00:0x00]);
+            } else if (0x64d98f6e == arg0) {
+                if (msg.value) { revert(memory[0x00:0x00]); }
+            
+                var0 = 0x00b0;
+                // Method call to func_029F
+                var temp1 = memory[0x40:0x60];
+                memory[temp1:temp1 + 0x20] = !!!!var0;
+                var temp2 = memory[0x40:0x60];
+                return memory[temp2:temp2 + (0x20 + temp1) - temp2];
+            } else if (0x6c54fcef == arg0) {
+                if (msg.value) { revert(memory[0x00:0x00]); }
+            
+                var0 = 0x0125;
+                var temp3 = 0x04 + msg.data[0x04:0x24];
+                var temp4 = msg.data[temp3:temp3 + 0x20];
+                var temp5 = memory[0x40:0x60];
+                memory[0x40:0x60] = temp5 + 0x20 + (0x1f + temp4) / 0x20 * 0x20;
+                memory[temp5:temp5 + 0x20] = temp4;
+                memory[0x20 + temp5:0x20 + temp5 + temp4] = msg.data[0x20 + temp3:0x20 + temp3 + temp4];
+                var1 = temp5;
+                // Method call to func_02B5
+                stop();
+            } else if (0x7430306c == arg0) {
+                if (msg.value) { revert(memory[0x00:0x00]); }
+            
+                var0 = 0x013a;
+                selfdestruct(0x00);
+            } else if (0xb220f73c == arg0) {
+                if (msg.value) { revert(memory[0x00:0x00]); }
+            
+                var0 = 0x0197;
+                var temp6 = 0x04 + msg.data[0x04:0x24];
+                var temp7 = msg.data[temp6:temp6 + 0x20];
+                var temp8 = memory[0x40:0x60];
+                memory[0x40:0x60] = temp8 + 0x20 + (0x1f + temp7) / 0x20 * 0x20;
+                memory[temp8:temp8 + 0x20] = temp7;
+                memory[0x20 + temp8:0x20 + temp8 + temp7] = msg.data[0x20 + temp6:0x20 + temp6 + temp7];
+                var1 = temp8;
+                // Method call to func_073D
+                stop();
+            } else if (0xb4eff690 == arg0) {
+                var0 = 0x01e9;
+                var temp9 = 0x04 + msg.data[0x04:0x24];
+                var temp10 = msg.data[temp9:temp9 + 0x20];
+                var temp11 = memory[0x40:0x60];
+                memory[0x40:0x60] = temp11 + 0x20 + (0x1f + temp10) / 0x20 * 0x20;
+                memory[temp11:temp11 + 0x20] = temp10;
+                memory[0x20 + temp11:0x20 + temp11 + temp10] = msg.data[0x20 + temp9:0x20 + temp9 + temp10];
+                var1 = temp11;
+                // Method call to func_0BCC
+                stop();
+            } else if (0xd6385778 == arg0) {
+                if (msg.value) { revert(memory[0x00:0x00]); }
+            
+                var0 = 0x0246;
+                var temp12 = 0x04 + msg.data[0x04:0x24];
+                var temp13 = msg.data[temp12:temp12 + 0x20];
+                var temp14 = memory[0x40:0x60];
+                memory[0x40:0x60] = temp14 + 0x20 + (0x1f + temp13) / 0x20 * 0x20;
+                memory[temp14:temp14 + 0x20] = temp13;
+                memory[0x20 + temp14:0x20 + temp14 + temp13] = msg.data[0x20 + temp12:0x20 + temp12 + temp13];
+                var1 = temp14;
+                // Method call to func_1195
+                stop();
+            } else {
+                if (0xf605fa57 != arg0) { revert(memory[0x00:0x00]); }
+            
+                var0 = 0x0298;
+                var temp15 = 0x04 + msg.data[0x04:0x24];
+                var temp16 = msg.data[temp15:temp15 + 0x20];
+                var temp17 = memory[0x40:0x60];
+                memory[0x40:0x60] = temp17 + 0x20 + (0x1f + temp16) / 0x20 * 0x20;
+                memory[temp17:temp17 + 0x20] = temp16;
+                memory[0x20 + temp17:0x20 + temp17 + temp16] = msg.data[0x20 + temp15:0x20 + temp15 + temp16];
+                var1 = temp17;
+                // Method call to func_1869
+                stop();
+            }
+        }
+    }
+    
+    function func_073D() {
+        var var0 = 0x7500000000000000000000000000000000000000000000000000000000000000;
+        var var1 = arg0;
+        var var2 = 0x0d;
+    
+        if (var2 >= memory[var1:var1 + 0x20]) { assert(); }
+    
+        if (~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var1 + var2:0x20 + var1 + var2 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000) != var0) { goto label_0038; }
+    
+        var0 = 0x07ed;
+        // Method call to func_1DBD
+        var0 = 0xa8c8af687609bf404c202ac1378e10cd19421e72c0a161edc56b53752326592b;
+        var1 = 0x01;
+        var2 = 0x02;
+        var var3 = arg0;
+        var var4 = 0x0e;
+    
+        if (var4 >= memory[var3:var3 + 0x20]) { assert(); }
+    
+        var3 = 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var3 + var4:0x20 + var3 + var4 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var4 = arg0;
+        var var5 = 0x0f;
+    
+        if (var5 >= memory[var4:var4 + 0x20]) { assert(); }
+    
+        var4 = 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var4 + var5:0x20 + var4 + var5 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var5 = arg0;
+        var var6 = 0x10;
+    
+        if (var6 >= memory[var5:var5 + 0x20]) { assert(); }
+    
+        var5 = 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var5 + var6:0x20 + var5 + var6 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var6 = arg0;
+        var var7 = 0x11;
+    
+        if (var7 >= memory[var6:var6 + 0x20]) { assert(); }
+    
+        var temp0 = memory[0x40:0x60];
+        memory[temp0:temp0 + 0x20] = ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & var3;
+        var temp1 = 0x01 + temp0;
+        memory[temp1:temp1 + 0x20] = ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & var4;
+        var temp2 = 0x01 + temp1;
+        memory[temp2:temp2 + 0x20] = ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & var5;
+        var temp3 = 0x01 + temp2;
+        memory[temp3:temp3 + 0x20] = ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var6 + var7:0x20 + var6 + var7 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var temp4 = 0x01 + temp3;
+        var3 = temp4;
+        var temp5 = memory[0x40:0x60];
+        memory[temp5:temp5 + 0x20] = address(var2).call.gas(msg.gas).value(0x00)(memory[temp5:temp5 + var3 - temp5]);
+    
+        if (!address(var2).call.gas(msg.gas).value(0x00)(memory[temp5:temp5 + var3 - temp5])) { revert(memory[0x00:0x00]); }
+    
+        if (memory[memory[0x40:0x60]:memory[0x40:0x60] + 0x20] / 0x01 + var1 == var0) {
+            var0 = 0x0ae6;
+            // Method call to func_1DBD
+            var0 = 0xffffffffffffffffffffffffffffffffffffffff & address(this);
+            var1 = 0x6c54fcef;
+            var temp6 = arg0;
+            var2 = temp6;
+            var temp7 = memory[0x40:0x60];
+            memory[temp7:temp7 + 0x20] = 0x0100000000000000000000000000000000000000000000000000000000 * (0xffffffff & var1);
+            var temp8 = 0x04 + temp7;
+            var3 = temp8;
+            var4 = var3;
+            var temp9 = 0x20 + var4;
+            memory[var4:var4 + 0x20] = temp9 - var4;
+            memory[temp9:temp9 + 0x20] = memory[var2:var2 + 0x20];
+            var temp10 = 0x20 + temp9;
+            var5 = temp10;
+            var temp11 = memory[var2:var2 + 0x20];
+            var temp12 = 0x20 + var2;
+            var7 = temp11;
+            var6 = temp12;
+            var var8 = var7;
+            var var9 = var5;
+            var var10 = var6;
+            var var11 = 0x00;
+        
+            if (var11 >= var8) {
+            label_0B6E:
+                var temp13 = var7;
+                var5 = temp13 + var5;
+                var6 = 0x1f & temp13;
+            
+                if (!var6) {
+                    var temp14 = var5;
+                    var2 = temp14;
+                    var3 = 0x00;
+                    var temp15 = memory[0x40:0x60];
+                    var4 = temp15;
+                    var5 = var2 - var4;
+                    var6 = var4;
+                    var7 = 0x00;
+                    var8 = var0;
+                
+                    if (!address(var8).code.length) { revert(memory[0x00:0x00]); }
+                
+                label_0BB9:
+                    memory[var4:var4 + var3] = address(var8).call.gas(msg.gas).value(var7)(memory[var6:var6 + var5]);
+                
+                    if (!address(var8).call.gas(msg.gas).value(var7)(memory[var6:var6 + var5])) { revert(memory[0x00:0x00]); }
+                
+                    // Could not resolve jump destination (is this a return?)
+                } else {
+                    var temp16 = var6;
+                    var temp17 = var5 - temp16;
+                    memory[temp17:temp17 + 0x20] = ~(0x0100 ** (0x20 - temp16) - 0x01) & memory[temp17:temp17 + 0x20];
+                    var temp18 = 0x20 + temp17;
+                    var2 = temp18;
+                    var3 = 0x00;
+                    var4 = memory[0x40:0x60];
+                    var temp19 = var4;
+                    var5 = var2 - temp19;
+                    var6 = temp19;
+                    var7 = 0x00;
+                    var8 = var0;
+                
+                    if (address(var8).code.length) { goto label_0BB9; }
+                    else { revert(memory[0x00:0x00]); }
+                }
+            } else {
+            label_0B5C:
+                var temp20 = var11;
+                memory[var9 + temp20:var9 + temp20 + 0x20] = memory[var10 + temp20:var10 + temp20 + 0x20];
+                var11 = temp20 + 0x20;
+            
+                if (var11 >= var8) { goto label_0B6E; }
+                else { goto label_0B5C; }
+            }
+        } else {
+        label_0038:
+        
+            if (0x291c == arg0) {
+                arg0 = 0x009b;
+                revert(memory[0x00:0x00]);
+            } else if (0x64d98f6e == arg1) {
+                if (msg.value) { revert(memory[0x00:0x00]); }
+            
+                arg0 = 0x00b0;
+                // Method call to func_029F
+                var temp21 = memory[0x40:0x60];
+                memory[temp21:temp21 + 0x20] = !!!!arg0;
+                var temp22 = memory[0x40:0x60];
+                return memory[temp22:temp22 + (0x20 + temp21) - temp22];
+            } else if (0x6c54fcef == arg1) {
+                if (msg.value) { revert(memory[0x00:0x00]); }
+            
+                arg0 = 0x0125;
+                var temp23 = 0x04 + msg.data[0x04:0x24];
+                var temp24 = msg.data[temp23:temp23 + 0x20];
+                var temp25 = memory[0x40:0x60];
+                memory[0x40:0x60] = temp25 + 0x20 + (0x1f + temp24) / 0x20 * 0x20;
+                memory[temp25:temp25 + 0x20] = temp24;
+                memory[0x20 + temp25:0x20 + temp25 + temp24] = msg.data[0x20 + temp23:0x20 + temp23 + temp24];
+                var0 = temp25;
+                // Method call to func_02B5
+                stop();
+            } else if (0x7430306c == arg1) {
+                if (msg.value) { revert(memory[0x00:0x00]); }
+            
+                arg0 = 0x013a;
+                selfdestruct(0x00);
+            } else if (0xb220f73c == arg1) {
+                if (msg.value) { revert(memory[0x00:0x00]); }
+            
+                arg0 = 0x0197;
+                var temp26 = 0x04 + msg.data[0x04:0x24];
+                var temp27 = msg.data[temp26:temp26 + 0x20];
+                var temp28 = memory[0x40:0x60];
+                memory[0x40:0x60] = temp28 + 0x20 + (0x1f + temp27) / 0x20 * 0x20;
+                memory[temp28:temp28 + 0x20] = temp27;
+                memory[0x20 + temp28:0x20 + temp28 + temp27] = msg.data[0x20 + temp26:0x20 + temp26 + temp27];
+                var0 = temp28;
+                // Method call to func_073D
+                stop();
+            } else if (0xb4eff690 == arg1) {
+                arg0 = 0x01e9;
+                var temp29 = 0x04 + msg.data[0x04:0x24];
+                var temp30 = msg.data[temp29:temp29 + 0x20];
+                var temp31 = memory[0x40:0x60];
+                memory[0x40:0x60] = temp31 + 0x20 + (0x1f + temp30) / 0x20 * 0x20;
+                memory[temp31:temp31 + 0x20] = temp30;
+                memory[0x20 + temp31:0x20 + temp31 + temp30] = msg.data[0x20 + temp29:0x20 + temp29 + temp30];
+                var0 = temp31;
+                // Method call to func_0BCC
+                stop();
+            } else if (0xd6385778 == arg1) {
+                if (msg.value) { revert(memory[0x00:0x00]); }
+            
+                arg0 = 0x0246;
+                var temp32 = 0x04 + msg.data[0x04:0x24];
+                var temp33 = msg.data[temp32:temp32 + 0x20];
+                var temp34 = memory[0x40:0x60];
+                memory[0x40:0x60] = temp34 + 0x20 + (0x1f + temp33) / 0x20 * 0x20;
+                memory[temp34:temp34 + 0x20] = temp33;
+                memory[0x20 + temp34:0x20 + temp34 + temp33] = msg.data[0x20 + temp32:0x20 + temp32 + temp33];
+                var0 = temp34;
+                // Method call to func_1195
+                stop();
+            } else {
+                if (0xf605fa57 != arg1) { revert(memory[0x00:0x00]); }
+            
+                arg0 = 0x0298;
+                var temp35 = 0x04 + msg.data[0x04:0x24];
+                var temp36 = msg.data[temp35:temp35 + 0x20];
+                var temp37 = memory[0x40:0x60];
+                memory[0x40:0x60] = temp37 + 0x20 + (0x1f + temp36) / 0x20 * 0x20;
+                memory[temp37:temp37 + 0x20] = temp36;
+                memory[0x20 + temp37:0x20 + temp37 + temp36] = msg.data[0x20 + temp35:0x20 + temp35 + temp36];
+                var0 = temp37;
+                // Method call to func_1869
+                stop();
+            }
+        }
+    }
+    
+    function func_0BCC() {
+        var var0 = 0x6600000000000000000000000000000000000000000000000000000000000000;
+        var var1 = arg0;
+        var var2 = 0x00;
+    
+        if (var2 >= memory[var1:var1 + 0x20]) { assert(); }
+    
+        if (~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var1 + var2:0x20 + var1 + var2 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000) != var0) { goto label_0038; }
+    
+        var0 = 0x0c7c;
+        // Method call to func_1DBD
+        var0 = 0x6c00000000000000000000000000000000000000000000000000000000000000;
+        var1 = arg0;
+        var2 = 0x01;
+    
+        if (var2 >= memory[var1:var1 + 0x20]) { assert(); }
+    
+        if (~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var1 + var2:0x20 + var1 + var2 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000) != var0) { goto label_0038; }
+    
+        var0 = 0x6100000000000000000000000000000000000000000000000000000000000000;
+        var1 = arg0;
+        var2 = 0x02;
+    
+        if (var2 >= memory[var1:var1 + 0x20]) { assert(); }
+    
+        if (~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var1 + var2:0x20 + var1 + var2 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000) != var0) { goto label_0038; }
+    
+        var0 = 0x0dd4;
+        // Method call to func_1DBD
+        var0 = 0x6700000000000000000000000000000000000000000000000000000000000000;
+        var1 = arg0;
+        var2 = 0x03;
+    
+        if (var2 >= memory[var1:var1 + 0x20]) { assert(); }
+    
+        if (~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var1 + var2:0x20 + var1 + var2 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000) != var0) { goto label_0038; }
+    
+        var0 = 0x0e84;
+        // Method call to func_1DBD
+        var0 = 0x7b00000000000000000000000000000000000000000000000000000000000000;
+        var1 = arg0;
+        var2 = 0x04;
+    
+        if (var2 >= memory[var1:var1 + 0x20]) { assert(); }
+    
+        if (~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var1 + var2:0x20 + var1 + var2 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000) != var0) { goto label_0038; }
+    
+        var0 = 0x7d00000000000000000000000000000000000000000000000000000000000000;
+        var1 = arg0;
+        var2 = 0x1f;
+    
+        if (var2 >= memory[var1:var1 + 0x20]) { assert(); }
+    
+        if (~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var1 + var2:0x20 + var1 + var2 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000) != var0) { selfdestruct(0x00); }
+    
+        var0 = 0x0fdc;
+        // Method call to func_1DBD
+        var0 = 0xffffffffffffffffffffffffffffffffffffffff & address(this);
+        var1 = 0xf605fa57;
+        var2 = msg.value;
+        var temp0 = arg0;
+        var var3 = temp0;
+        var temp1 = memory[0x40:0x60];
+        memory[temp1:temp1 + 0x20] = 0x0100000000000000000000000000000000000000000000000000000000 * (0xffffffff & var1);
+        var var4 = 0x04 + temp1;
+        var temp2 = var4;
+        var var5 = temp2;
+        var temp3 = 0x20 + var5;
+        memory[var5:var5 + 0x20] = temp3 - var5;
+        memory[temp3:temp3 + 0x20] = memory[var3:var3 + 0x20];
+        var temp4 = 0x20 + temp3;
+        var var6 = temp4;
+        var temp5 = memory[var3:var3 + 0x20];
+        var temp6 = 0x20 + var3;
+        var var8 = temp5;
+        var var7 = temp6;
+        var var9 = var8;
+        var var10 = var6;
+        var var11 = var7;
+        var var12 = 0x00;
+    
+        if (var12 >= var9) {
+        label_1065:
+            var temp7 = var8;
+            var6 = temp7 + var6;
+            var7 = 0x1f & temp7;
+        
+            if (!var7) {
+                var temp8 = var6;
+                var3 = temp8;
+                var4 = 0x00;
+                var5 = memory[0x40:0x60];
+                var temp9 = var5;
+                var6 = var3 - temp9;
+                var7 = temp9;
+                var8 = var2;
+                var9 = var0;
+            
+                if (!address(var9).code.length) { revert(memory[0x00:0x00]); }
+            
+            label_10AF:
+                memory[var5:var5 + var4] = address(var9).call.gas(msg.gas).value(var8)(memory[var7:var7 + var6]);
+            
+                if (!address(var9).call.gas(msg.gas).value(var8)(memory[var7:var7 + var6])) { revert(memory[0x00:0x00]); }
+            
+                var0 = 0x10c8;
+                // Method call to func_1DBD
+                var0 = 0x7300000000000000000000000000000000000000000000000000000000000000;
+                var1 = arg0;
+                var2 = 0x1e;
+            
+                if (var2 >= memory[var1:var1 + 0x20]) { assert(); }
+            
+                if (~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var1 + var2:0x20 + var1 + var2 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000) == var0) {
+                    var0 = 0x1178;
+                    // Method call to func_1DBD
+                    var temp10 = 0x0100 ** 0x00;
+                    storage[0x00] = !!0x01 * temp10 | (~(0xff * temp10) & storage[0x00]);
+                    // Could not resolve jump destination (is this a return?)
+                } else {
+                label_0038:
+                
+                    if (0x291c == arg0) {
+                        arg0 = 0x009b;
+                        revert(memory[0x00:0x00]);
+                    } else if (0x64d98f6e == arg1) {
+                        if (msg.value) { revert(memory[0x00:0x00]); }
+                    
+                        arg0 = 0x00b0;
+                        // Method call to func_029F
+                        var temp11 = memory[0x40:0x60];
+                        memory[temp11:temp11 + 0x20] = !!!!arg0;
+                        var temp12 = memory[0x40:0x60];
+                        return memory[temp12:temp12 + (0x20 + temp11) - temp12];
+                    } else if (0x6c54fcef == arg1) {
+                        if (msg.value) { revert(memory[0x00:0x00]); }
+                    
+                        arg0 = 0x0125;
+                        var temp13 = 0x04 + msg.data[0x04:0x24];
+                        var temp14 = msg.data[temp13:temp13 + 0x20];
+                        var temp15 = memory[0x40:0x60];
+                        memory[0x40:0x60] = temp15 + 0x20 + (0x1f + temp14) / 0x20 * 0x20;
+                        memory[temp15:temp15 + 0x20] = temp14;
+                        memory[0x20 + temp15:0x20 + temp15 + temp14] = msg.data[0x20 + temp13:0x20 + temp13 + temp14];
+                        var0 = temp15;
+                        // Method call to func_02B5
+                        stop();
+                    } else if (0x7430306c == arg1) {
+                        if (msg.value) { revert(memory[0x00:0x00]); }
+                    
+                        arg0 = 0x013a;
+                        selfdestruct(0x00);
+                    } else if (0xb220f73c == arg1) {
+                        if (msg.value) { revert(memory[0x00:0x00]); }
+                    
+                        arg0 = 0x0197;
+                        var temp16 = 0x04 + msg.data[0x04:0x24];
+                        var temp17 = msg.data[temp16:temp16 + 0x20];
+                        var temp18 = memory[0x40:0x60];
+                        memory[0x40:0x60] = temp18 + 0x20 + (0x1f + temp17) / 0x20 * 0x20;
+                        memory[temp18:temp18 + 0x20] = temp17;
+                        memory[0x20 + temp18:0x20 + temp18 + temp17] = msg.data[0x20 + temp16:0x20 + temp16 + temp17];
+                        var0 = temp18;
+                        // Method call to func_073D
+                        stop();
+                    } else if (0xb4eff690 == arg1) {
+                        arg0 = 0x01e9;
+                        var temp19 = 0x04 + msg.data[0x04:0x24];
+                        var temp20 = msg.data[temp19:temp19 + 0x20];
+                        var temp21 = memory[0x40:0x60];
+                        memory[0x40:0x60] = temp21 + 0x20 + (0x1f + temp20) / 0x20 * 0x20;
+                        memory[temp21:temp21 + 0x20] = temp20;
+                        memory[0x20 + temp21:0x20 + temp21 + temp20] = msg.data[0x20 + temp19:0x20 + temp19 + temp20];
+                        var0 = temp21;
+                        // Method call to func_0BCC
+                        stop();
+                    } else if (0xd6385778 == arg1) {
+                        if (msg.value) { revert(memory[0x00:0x00]); }
+                    
+                        arg0 = 0x0246;
+                        var temp22 = 0x04 + msg.data[0x04:0x24];
+                        var temp23 = msg.data[temp22:temp22 + 0x20];
+                        var temp24 = memory[0x40:0x60];
+                        memory[0x40:0x60] = temp24 + 0x20 + (0x1f + temp23) / 0x20 * 0x20;
+                        memory[temp24:temp24 + 0x20] = temp23;
+                        memory[0x20 + temp24:0x20 + temp24 + temp23] = msg.data[0x20 + temp22:0x20 + temp22 + temp23];
+                        var0 = temp24;
+                        // Method call to func_1195
+                        stop();
+                    } else {
+                        if (0xf605fa57 != arg1) { revert(memory[0x00:0x00]); }
+                    
+                        arg0 = 0x0298;
+                        var temp25 = 0x04 + msg.data[0x04:0x24];
+                        var temp26 = msg.data[temp25:temp25 + 0x20];
+                        var temp27 = memory[0x40:0x60];
+                        memory[0x40:0x60] = temp27 + 0x20 + (0x1f + temp26) / 0x20 * 0x20;
+                        memory[temp27:temp27 + 0x20] = temp26;
+                        memory[0x20 + temp27:0x20 + temp27 + temp26] = msg.data[0x20 + temp25:0x20 + temp25 + temp26];
+                        var0 = temp27;
+                        // Method call to func_1869
+                        stop();
+                    }
+                }
+            } else {
+                var temp28 = var7;
+                var temp29 = var6 - temp28;
+                memory[temp29:temp29 + 0x20] = ~(0x0100 ** (0x20 - temp28) - 0x01) & memory[temp29:temp29 + 0x20];
+                var temp30 = 0x20 + temp29;
+                var3 = temp30;
+                var4 = 0x00;
+                var5 = memory[0x40:0x60];
+                var temp31 = var5;
+                var6 = var3 - temp31;
+                var7 = temp31;
+                var8 = var2;
+                var9 = var0;
+            
+                if (address(var9).code.length) { goto label_10AF; }
+                else { revert(memory[0x00:0x00]); }
+            }
+        } else {
+        label_1053:
+            var temp32 = var12;
+            memory[var10 + temp32:var10 + temp32 + 0x20] = memory[var11 + temp32:var11 + temp32 + 0x20];
+            var12 = temp32 + 0x20;
+        
+            if (var12 >= var9) { goto label_1065; }
+            else { goto label_1053; }
+        }
+    }
+    
+    function func_1195() {
+        var var0 = 0x00;
+        var var1 = var0;
+    
+        if (block.number != 0x01a4) { goto label_0038; }
+    
+        var0 = block.number;
+        var var2 = 0x11b2;
+        // Method call to func_1DBD
+        var1 = 0x74f794a249c48cbd04;
+        var2 = arg0;
+        var var3 = 0x05;
+    
+        if (var3 >= memory[var2:var2 + 0x20]) { assert(); }
+    
+        var2 = 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var2 + var3:0x20 + var2 + var3 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var3 = arg0;
+        var var4 = 0x06;
+    
+        if (var4 >= memory[var3:var3 + 0x20]) { assert(); }
+    
+        var3 = 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var3 + var4:0x20 + var3 + var4 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var4 = arg0;
+        var var5 = 0x07;
+    
+        if (var5 >= memory[var4:var4 + 0x20]) { assert(); }
+    
+        var4 = 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var4 + var5:0x20 + var4 + var5 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var5 = arg0;
+        var var6 = 0x08;
+    
+        if (var6 >= memory[var5:var5 + 0x20]) { assert(); }
+    
+        var5 = 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var5 + var6:0x20 + var5 + var6 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var6 = arg0;
+        var var7 = 0x09;
+    
+        if (var7 >= memory[var6:var6 + 0x20]) { assert(); }
+    
+        var6 = 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var6 + var7:0x20 + var6 + var7 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var7 = arg0;
+        var var8 = 0x0a;
+    
+        if (var8 >= memory[var7:var7 + 0x20]) { assert(); }
+    
+        var7 = 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var7 + var8:0x20 + var7 + var8 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var8 = arg0;
+        var var9 = 0x0b;
+    
+        if (var9 >= memory[var8:var8 + 0x20]) { assert(); }
+    
+        var8 = 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var8 + var9:0x20 + var8 + var9 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var9 = arg0;
+        var var10 = 0x0c;
+    
+        if (var10 >= memory[var9:var9 + 0x20]) { assert(); }
+    
+        var temp0 = memory[0x40:0x60];
+        memory[temp0:temp0 + 0x20] = ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & var2;
+        var temp1 = 0x01 + temp0;
+        memory[temp1:temp1 + 0x20] = ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & var3;
+        var temp2 = 0x01 + temp1;
+        memory[temp2:temp2 + 0x20] = ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & var4;
+        var temp3 = 0x01 + temp2;
+        memory[temp3:temp3 + 0x20] = ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & var5;
+        var temp4 = 0x01 + temp3;
+        memory[temp4:temp4 + 0x20] = ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & var6;
+        var temp5 = 0x01 + temp4;
+        memory[temp5:temp5 + 0x20] = ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & var7;
+        var temp6 = 0x01 + temp5;
+        memory[temp6:temp6 + 0x20] = ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & var8;
+        var temp7 = 0x01 + temp6;
+        memory[temp7:temp7 + 0x20] = ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var9 + var10:0x20 + var9 + var10 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var temp8 = memory[0x40:0x60];
+        var2 = ~0x00 & keccak256(memory[temp8:temp8 + (0x01 + temp7) - temp8]);
+        var3 = var0;
+        var4 = var1;
+    
+        if (!var3) { assert(); }
+    
+        memory[memory[0x40:0x60]:memory[0x40:0x60] + 0x20] = ~0xffffffffffffffffffffffffffffffffffffffffffffffff & ~0xffffffffffffffffffffffffffffffffffffffffffffffff & 0x01000000000000000000000000000000000000000000000000 * (var4 / var3);
+    
+        if (~0x00 & keccak256(memory[memory[0x40:0x60]:memory[0x40:0x60] + (0x08 + memory[0x40:0x60]) - memory[0x40:0x60]]) == var2) {
+            var2 = 0x1781;
+            // Method call to func_1DBD
+            var2 = 0xffffffffffffffffffffffffffffffffffffffff & address(this);
+            var3 = 0xb220f73c;
+            var temp9 = arg0;
+            var4 = temp9;
+            var temp10 = memory[0x40:0x60];
+            memory[temp10:temp10 + 0x20] = 0x0100000000000000000000000000000000000000000000000000000000 * (0xffffffff & var3);
+            var5 = 0x04 + temp10;
+            var temp11 = var5;
+            var6 = temp11;
+            var temp12 = 0x20 + var6;
+            memory[var6:var6 + 0x20] = temp12 - var6;
+            memory[temp12:temp12 + 0x20] = memory[var4:var4 + 0x20];
+            var temp13 = 0x20 + temp12;
+            var7 = temp13;
+            var temp14 = memory[var4:var4 + 0x20];
+            var temp15 = 0x20 + var4;
+            var8 = temp15;
+            var9 = temp14;
+            var10 = var9;
+            var var11 = var7;
+            var var12 = var8;
+            var var13 = 0x00;
+        
+            if (var13 >= var10) {
+            label_1809:
+                var temp16 = var9;
+                var7 = temp16 + var7;
+                var8 = 0x1f & temp16;
+            
+                if (!var8) {
+                    var temp17 = var7;
+                    var4 = temp17;
+                    var5 = 0x00;
+                    var6 = memory[0x40:0x60];
+                    var temp18 = var6;
+                    var7 = var4 - temp18;
+                    var8 = temp18;
+                    var9 = 0x00;
+                    var10 = var2;
+                
+                    if (!address(var10).code.length) { revert(memory[0x00:0x00]); }
+                
+                label_1854:
+                    memory[var6:var6 + var5] = address(var10).call.gas(msg.gas).value(var9)(memory[var8:var8 + var7]);
+                
+                    if (!address(var10).call.gas(msg.gas).value(var9)(memory[var8:var8 + var7])) { revert(memory[0x00:0x00]); }
+                
+                    // Could not resolve jump destination (is this a return?)
+                } else {
+                    var temp19 = var8;
+                    var temp20 = var7 - temp19;
+                    memory[temp20:temp20 + 0x20] = ~(0x0100 ** (0x20 - temp19) - 0x01) & memory[temp20:temp20 + 0x20];
+                    var temp21 = 0x20 + temp20;
+                    var4 = temp21;
+                    var5 = 0x00;
+                    var6 = memory[0x40:0x60];
+                    var temp22 = var6;
+                    var7 = var4 - temp22;
+                    var8 = temp22;
+                    var9 = 0x00;
+                    var10 = var2;
+                
+                    if (address(var10).code.length) { goto label_1854; }
+                    else { revert(memory[0x00:0x00]); }
+                }
+            } else {
+            label_17F7:
+                var temp23 = var13;
+                memory[var11 + temp23:var11 + temp23 + 0x20] = memory[var12 + temp23:var12 + temp23 + 0x20];
+                var13 = temp23 + 0x20;
+            
+                if (var13 >= var10) { goto label_1809; }
+                else { goto label_17F7; }
+            }
+        } else {
+        label_0038:
+        
+            if (0x291c == var1) {
+                var1 = 0x009b;
+                revert(memory[0x00:0x00]);
+            } else if (0x64d98f6e == var0) {
+                if (msg.value) { revert(memory[0x00:0x00]); }
+            
+                var1 = 0x00b0;
+                // Method call to func_029F
+                var temp24 = memory[0x40:0x60];
+                memory[temp24:temp24 + 0x20] = !!!!var1;
+                var temp25 = memory[0x40:0x60];
+                return memory[temp25:temp25 + (0x20 + temp24) - temp25];
+            } else if (0x6c54fcef == var0) {
+                if (msg.value) { revert(memory[0x00:0x00]); }
+            
+                var1 = 0x0125;
+                var temp26 = 0x04 + msg.data[0x04:0x24];
+                var temp27 = msg.data[temp26:temp26 + 0x20];
+                var temp28 = memory[0x40:0x60];
+                memory[0x40:0x60] = temp28 + 0x20 + (0x1f + temp27) / 0x20 * 0x20;
+                memory[temp28:temp28 + 0x20] = temp27;
+                memory[0x20 + temp28:0x20 + temp28 + temp27] = msg.data[0x20 + temp26:0x20 + temp26 + temp27];
+                var2 = temp28;
+                // Method call to func_02B5
+                stop();
+            } else if (0x7430306c == var0) {
+                if (msg.value) { revert(memory[0x00:0x00]); }
+            
+                var1 = 0x013a;
+                selfdestruct(0x00);
+            } else if (0xb220f73c == var0) {
+                if (msg.value) { revert(memory[0x00:0x00]); }
+            
+                var1 = 0x0197;
+                var temp29 = 0x04 + msg.data[0x04:0x24];
+                var temp30 = msg.data[temp29:temp29 + 0x20];
+                var temp31 = memory[0x40:0x60];
+                memory[0x40:0x60] = temp31 + 0x20 + (0x1f + temp30) / 0x20 * 0x20;
+                memory[temp31:temp31 + 0x20] = temp30;
+                memory[0x20 + temp31:0x20 + temp31 + temp30] = msg.data[0x20 + temp29:0x20 + temp29 + temp30];
+                var2 = temp31;
+                // Method call to func_073D
+                stop();
+            } else if (0xb4eff690 == var0) {
+                var1 = 0x01e9;
+                var temp32 = 0x04 + msg.data[0x04:0x24];
+                var temp33 = msg.data[temp32:temp32 + 0x20];
+                var temp34 = memory[0x40:0x60];
+                memory[0x40:0x60] = temp34 + 0x20 + (0x1f + temp33) / 0x20 * 0x20;
+                memory[temp34:temp34 + 0x20] = temp33;
+                memory[0x20 + temp34:0x20 + temp34 + temp33] = msg.data[0x20 + temp32:0x20 + temp32 + temp33];
+                var2 = temp34;
+                // Method call to func_0BCC
+                stop();
+            } else if (0xd6385778 == var0) {
+                if (msg.value) { revert(memory[0x00:0x00]); }
+            
+                var1 = 0x0246;
+                var temp35 = 0x04 + msg.data[0x04:0x24];
+                var temp36 = msg.data[temp35:temp35 + 0x20];
+                var temp37 = memory[0x40:0x60];
+                memory[0x40:0x60] = temp37 + 0x20 + (0x1f + temp36) / 0x20 * 0x20;
+                memory[temp37:temp37 + 0x20] = temp36;
+                memory[0x20 + temp37:0x20 + temp37 + temp36] = msg.data[0x20 + temp35:0x20 + temp35 + temp36];
+                var2 = temp37;
+                // Method call to func_1195
+                stop();
+            } else {
+                if (0xf605fa57 != var0) { revert(memory[0x00:0x00]); }
+            
+                var1 = 0x0298;
+                var temp38 = 0x04 + msg.data[0x04:0x24];
+                var temp39 = msg.data[temp38:temp38 + 0x20];
+                var temp40 = memory[0x40:0x60];
+                memory[0x40:0x60] = temp40 + 0x20 + (0x1f + temp39) / 0x20 * 0x20;
+                memory[temp40:temp40 + 0x20] = temp39;
+                memory[0x20 + temp40:0x20 + temp40 + temp39] = msg.data[0x20 + temp38:0x20 + temp38 + temp39];
+                var2 = temp40;
+                // Method call to func_1869
+                stop();
+            }
+        }
+    }
+    
+    function func_1869() {
+        var var0 = 0x00;
+        var var1 = var0;
+        var var2 = 0x00;
+    
+        if (msg.value != 0x2a) { selfdestruct(0x00); }
+    
+        var var3 = 0x1884;
+        // Method call to func_1DBD
+    
+        if (tx.gasprice != 0x066a44) { goto label_0038; }
+    
+        var3 = 0x189c;
+        // Method call to func_1DBD
+        var3 = arg0;
+        var var4 = 0x1a;
+    
+        if (var4 >= memory[var3:var3 + 0x20]) { assert(); }
+    
+        var3 = 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var3 + var4:0x20 + var3 + var4 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var4 = arg0;
+        var var5 = 0x1b;
+    
+        if (var5 >= memory[var4:var4 + 0x20]) { assert(); }
+    
+        var4 = 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var4 + var5:0x20 + var4 + var5 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var5 = arg0;
+        var var6 = 0x1c;
+    
+        if (var6 >= memory[var5:var5 + 0x20]) { assert(); }
+    
+        var5 = 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var5 + var6:0x20 + var5 + var6 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var6 = arg0;
+        var var7 = 0x1d;
+    
+        if (var7 >= memory[var6:var6 + 0x20]) { assert(); }
+    
+        var temp0 = memory[0x40:0x60];
+        memory[temp0:temp0 + 0x20] = ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & var3;
+        var temp1 = 0x01 + temp0;
+        memory[temp1:temp1 + 0x20] = ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & var4;
+        var temp2 = 0x01 + temp1;
+        memory[temp2:temp2 + 0x20] = ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & var5;
+        var temp3 = 0x01 + temp2;
+        memory[temp3:temp3 + 0x20] = ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & 0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[0x20 + var6 + var7:0x20 + var6 + var7 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000);
+        var temp4 = memory[0x40:0x60];
+        var0 = keccak256(memory[temp4:temp4 + (0x01 + temp3) - temp4]);
+        var3 = 0x1b48;
+        // Method call to func_1DBD
+        var1 = 0x00;
+    
+        if (var1 >= memory[arg0:arg0 + 0x20]) {
+        label_1C0F:
+            var3 = 0x1c17;
+            // Method call to func_1DBD
+            var3 = 0xffffffffffffffffffffffffffffffffffffffff & address(this);
+            var4 = 0xd6385778;
+            var5 = arg0;
+            var temp5 = var5;
+            var temp6 = memory[0x40:0x60];
+            memory[temp6:temp6 + 0x20] = 0x0100000000000000000000000000000000000000000000000000000000 * (0xffffffff & var4);
+            var temp7 = 0x04 + temp6;
+            var6 = temp7;
+            var7 = var6;
+            var temp8 = 0x20 + var7;
+            memory[var7:var7 + 0x20] = temp8 - var7;
+            memory[temp8:temp8 + 0x20] = memory[temp5:temp5 + 0x20];
+            var temp9 = 0x20 + temp8;
+            var var8 = temp9;
+            var temp10 = memory[temp5:temp5 + 0x20];
+            var temp11 = 0x20 + temp5;
+            var var10 = temp10;
+            var var9 = temp11;
+            var var11 = var10;
+            var var12 = var8;
+            var var13 = var9;
+            var var14 = 0x00;
+        
+            if (var14 >= var11) {
+            label_1C9F:
+                var temp12 = var10;
+                var8 = temp12 + var8;
+                var9 = 0x1f & temp12;
+            
+                if (!var9) {
+                    var temp13 = var8;
+                    var5 = temp13;
+                    var6 = 0x00;
+                    var temp14 = memory[0x40:0x60];
+                    var7 = temp14;
+                    var8 = var5 - var7;
+                    var9 = var7;
+                    var10 = 0x00;
+                    var11 = var3;
+                
+                    if (!address(var11).code.length) { revert(memory[0x00:0x00]); }
+                
+                label_1CEA:
+                    memory[var7:var7 + var6] = address(var11).call.gas(msg.gas).value(var10)(memory[var9:var9 + var8]);
+                
+                    if (!address(var11).call.gas(msg.gas).value(var10)(memory[var9:var9 + var8])) { revert(memory[0x00:0x00]); }
+                
+                    var2 = 0x73686974636f696e;
+                
+                    if (msg.value == var2) { goto label_0038; }
+                
+                    var3 = 0x1d19;
+                    // Method call to func_1DBD
+                    memory[0x021c:0x0220] = address(msg.sender).code[0x59:0x5d];
+                    var2 = memory[0x0200:0x0220];
+                    var3 = 0x1d30;
+                    // Method call to func_1DBD
+                    memory[memory[0x40:0x60]:memory[0x40:0x60] + 0x20] = ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff & ~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffff & 0x0100000000000000000000000000000000000000000000000000000000 * var2;
+                
+                    if (~0x00 & keccak256(memory[memory[0x40:0x60]:memory[0x40:0x60] + (0x04 + memory[0x40:0x60]) - memory[0x40:0x60]]) == ~0x00 & var0) {
+                        // Could not resolve jump destination (is this a return?)
+                    } else {
+                    label_0038:
+                    
+                        if (0x291c == var2) {
+                            var2 = 0x009b;
+                            revert(memory[0x00:0x00]);
+                        } else if (0x64d98f6e == var1) {
+                            if (msg.value) { revert(memory[0x00:0x00]); }
+                        
+                            var2 = 0x00b0;
+                            // Method call to func_029F
+                            var temp15 = memory[0x40:0x60];
+                            memory[temp15:temp15 + 0x20] = !!!!var2;
+                            var temp16 = memory[0x40:0x60];
+                            return memory[temp16:temp16 + (0x20 + temp15) - temp16];
+                        } else if (0x6c54fcef == var1) {
+                            if (msg.value) { revert(memory[0x00:0x00]); }
+                        
+                            var2 = 0x0125;
+                            var temp17 = 0x04 + msg.data[0x04:0x24];
+                            var temp18 = msg.data[temp17:temp17 + 0x20];
+                            var temp19 = memory[0x40:0x60];
+                            memory[0x40:0x60] = temp19 + 0x20 + (0x1f + temp18) / 0x20 * 0x20;
+                            memory[temp19:temp19 + 0x20] = temp18;
+                            memory[0x20 + temp19:0x20 + temp19 + temp18] = msg.data[0x20 + temp17:0x20 + temp17 + temp18];
+                            var3 = temp19;
+                            // Method call to func_02B5
+                            stop();
+                        } else if (0x7430306c == var1) {
+                            if (msg.value) { revert(memory[0x00:0x00]); }
+                        
+                            var2 = 0x013a;
+                            selfdestruct(0x00);
+                        } else if (0xb220f73c == var1) {
+                            if (msg.value) { revert(memory[0x00:0x00]); }
+                        
+                            var2 = 0x0197;
+                            var temp20 = 0x04 + msg.data[0x04:0x24];
+                            var temp21 = msg.data[temp20:temp20 + 0x20];
+                            var temp22 = memory[0x40:0x60];
+                            memory[0x40:0x60] = temp22 + 0x20 + (0x1f + temp21) / 0x20 * 0x20;
+                            memory[temp22:temp22 + 0x20] = temp21;
+                            memory[0x20 + temp22:0x20 + temp22 + temp21] = msg.data[0x20 + temp20:0x20 + temp20 + temp21];
+                            var3 = temp22;
+                            // Method call to func_073D
+                            stop();
+                        } else if (0xb4eff690 == var1) {
+                            var2 = 0x01e9;
+                            var temp23 = 0x04 + msg.data[0x04:0x24];
+                            var temp24 = msg.data[temp23:temp23 + 0x20];
+                            var temp25 = memory[0x40:0x60];
+                            memory[0x40:0x60] = temp25 + 0x20 + (0x1f + temp24) / 0x20 * 0x20;
+                            memory[temp25:temp25 + 0x20] = temp24;
+                            memory[0x20 + temp25:0x20 + temp25 + temp24] = msg.data[0x20 + temp23:0x20 + temp23 + temp24];
+                            var3 = temp25;
+                            // Method call to func_0BCC
+                            stop();
+                        } else if (0xd6385778 == var1) {
+                            if (msg.value) { revert(memory[0x00:0x00]); }
+                        
+                            var2 = 0x0246;
+                            var temp26 = 0x04 + msg.data[0x04:0x24];
+                            var temp27 = msg.data[temp26:temp26 + 0x20];
+                            var temp28 = memory[0x40:0x60];
+                            memory[0x40:0x60] = temp28 + 0x20 + (0x1f + temp27) / 0x20 * 0x20;
+                            memory[temp28:temp28 + 0x20] = temp27;
+                            memory[0x20 + temp28:0x20 + temp28 + temp27] = msg.data[0x20 + temp26:0x20 + temp26 + temp27];
+                            var3 = temp28;
+                            // Method call to func_1195
+                            stop();
+                        } else {
+                            if (0xf605fa57 != var1) { revert(memory[0x00:0x00]); }
+                        
+                            var2 = 0x0298;
+                            var temp29 = 0x04 + msg.data[0x04:0x24];
+                            var temp30 = msg.data[temp29:temp29 + 0x20];
+                            var temp31 = memory[0x40:0x60];
+                            memory[0x40:0x60] = temp31 + 0x20 + (0x1f + temp30) / 0x20 * 0x20;
+                            memory[temp31:temp31 + 0x20] = temp30;
+                            memory[0x20 + temp31:0x20 + temp31 + temp30] = msg.data[0x20 + temp29:0x20 + temp29 + temp30];
+                            var3 = temp31;
+                            // Method call to func_1869
+                            stop();
+                        }
+                    }
+                } else {
+                    var temp32 = var9;
+                    var temp33 = var8 - temp32;
+                    memory[temp33:temp33 + 0x20] = ~(0x0100 ** (0x20 - temp32) - 0x01) & memory[temp33:temp33 + 0x20];
+                    var temp34 = 0x20 + temp33;
+                    var5 = temp34;
+                    var6 = 0x00;
+                    var7 = memory[0x40:0x60];
+                    var temp35 = var7;
+                    var8 = var5 - temp35;
+                    var9 = temp35;
+                    var10 = 0x00;
+                    var11 = var3;
+                
+                    if (address(var11).code.length) { goto label_1CEA; }
+                    else { revert(memory[0x00:0x00]); }
+                }
+            } else {
+            label_1C8D:
+                var temp36 = var14;
+                memory[var12 + temp36:var12 + temp36 + 0x20] = memory[var13 + temp36:var13 + temp36 + 0x20];
+                var14 = temp36 + 0x20;
+            
+                if (var14 >= var11) { goto label_1C9F; }
+                else { goto label_1C8D; }
+            }
+        } else {
+        label_1B57:
+            var3 = 0x0100000000000000000000000000000000000000000000000000000000000000 * msg.value;
+            var4 = arg0;
+            var5 = var1;
+        
+            if (var5 >= memory[var4:var4 + 0x20]) { assert(); }
+        
+            var temp37 = 0x20 + var4 + var5;
+            memory[temp37:temp37 + 0x01] = byte(~0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff & (0x0100000000000000000000000000000000000000000000000000000000000000 * (memory[temp37:temp37 + 0x20] / 0x0100000000000000000000000000000000000000000000000000000000000000) ~ var3), 0x00);
+            var1 = 0x01 + var1;
+        
+            if (var1 >= memory[arg0:arg0 + 0x20]) { goto label_1C0F; }
+            else { goto label_1B57; }
+        }
+    }
+    
+    function func_1DBD() {
+        var var0 = 0x1dc6 + 0x00;
+        // Could not resolve jump destination (is this a return?)
+    }
+}
